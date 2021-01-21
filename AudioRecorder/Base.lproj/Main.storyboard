@@ -16,16 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wju-ig-3jh">
-                                <rect key="frame" x="57" y="180" width="300" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wju-ig-3jh">
+                                <rect key="frame" x="178.5" y="148" width="57" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0v-KK-vLO">
-                                <rect key="frame" x="172" y="740" width="71" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0v-KK-vLO">
+                                <rect key="frame" x="171.5" y="772" width="71" height="30"/>
                                 <state key="normal" title="Start/Stop"/>
                                 <connections>
                                     <action selector="handleRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jtl-I7-jq4"/>
@@ -34,6 +32,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Wju-ig-3jh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9Na-tl-iiG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="X0v-KK-vLO" secondAttribute="bottom" constant="60" id="EQn-GV-tge"/>
+                            <constraint firstItem="X0v-KK-vLO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pGf-Zr-lg5"/>
+                            <constraint firstItem="Wju-ig-3jh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="so6-KT-FFp"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RRS-si-1Th"/>
                     <connections>
